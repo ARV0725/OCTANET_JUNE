@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 49.4vw;
+    background: linear-gradient(120deg, rgb(215, 147, 0), rgb(72, 0, 255));
+    background-attachment: fixed;
+}
+
+
+.cont{
+    margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
+    height: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: Montserrat;
+
+}
+
+.cont h1{
+    font-size: 2.5rem;
+}
+
+.work-inp{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.task-inp-1{
+    height: 2.5rem;
+    width: auto;
+    border-radius: 1.25rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    padding-left: 1rem;
+    padding-right: 3rem;
+    color: white;
+    outline: none;
+}
+
+.task-inp{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.placeholder{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+
+.task-inp-1:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.task-inp-1:focus + .placeholder{
+    top: -15px;
+    color: white;
+    padding: 2px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.task-inp-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.task-inp input[type=date]{
+    font-family: Montserrat;
+    height: 2.5rem;
+    width: 9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.task-inp input[type=date]:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.task-inp input[type=date]::-webkit-calendar-picker-indicator{
+    filter: invert();
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.work-inp input[type=button]{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.work-inp input[type=button]:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.tasks{
+    height: 2rem;
+    width: auto;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.tasks:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.task-tab{
+    display: flex;
+}
+.task-tab-1{
+    display: flex;
+}
+
+.task-text{
+    margin-top: 4px;
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.task-due{
+    margin-top: 4px;
+    margin-right: 1rem;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+
+.btn{
+    box-sizing: border-box;
+    background-color: transparent;
+    height: 32px;
+    width: 32px;
+    border-radius: 1rem;
+    color: white;
+    border: 3px solid white;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.check{
+    padding-top: 0.35rem;
+    font-size: 1rem;
+}
+
+.checked{
+    font-size: 2rem;
+}
+
+::-webkit-validation-bubble-message{
+    background-color: red;
+}
